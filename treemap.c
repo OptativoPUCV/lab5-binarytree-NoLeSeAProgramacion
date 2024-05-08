@@ -100,6 +100,7 @@ TreeNode * minimum(TreeNode * x)
 void removeNode(TreeMap * tree, TreeNode* node)
 {
     if (tree == NULL || node == NULL) return;
+    
     if (node->left == NULL && node->right == NULL)
     {
         if (node->parent == NULL)
@@ -140,6 +141,7 @@ void removeNode(TreeMap * tree, TreeNode* node)
         free(node->pair->value);
         free(node->pair);
         free(node);
+        return;
     }
 }
 
