@@ -96,3 +96,17 @@ Wed 08 May 2024 08:30:23 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 53a6878
+Wed 08 May 2024 08:36:52 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:220:5: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+  220 |     return;
+      |     ^~~~~~
+treemap.c:202:8: note: declared here
+  202 | Pair * nextTreeMap(TreeMap * tree)
+      |        ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5ce802b
